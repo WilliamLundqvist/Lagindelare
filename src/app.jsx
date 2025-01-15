@@ -94,7 +94,7 @@ const App = () => {
           />
           <button onClick={handleGenerateGroups}>Generera grupper</button>
         </div>
-        <div className="w-fit">
+        <div className="w-fit mt-6">
           <ul className="grid grid-cols-2">
             {groups.map((group, index) => (
               <li key={index}>
@@ -113,7 +113,7 @@ const App = () => {
       </div>
       <Link
         to="/groups"
-        className="absolute bottom-3 right-3 rounded-md text-2xl border border-black p-2"
+        className=" fixed bottom-3 right-3 rounded-md text-2xl border border-black p-2"
       >
         Till grupper
       </Link>

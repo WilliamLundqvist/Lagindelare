@@ -10,10 +10,10 @@ const Groups = () => {
     "Padel 1",
     "Squash 1",
     "Styrketräning",
-    "Fotbollstennis 1",
+    "Padel 2",
     "Squash 2",
     "Fotbollsspel",
-    "Fotbollstennis 2",
+    "Ledarsnack",
     "Squash 3",
   ]);
 
