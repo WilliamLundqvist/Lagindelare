@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router"; // Fixed import fro
 import "./index.css";
 import { GroupsProvider } from "./context/GroupsContext.jsx";
 import Groups from "./groups.jsx";
-import App from "./App.jsx";
+import App from "./app.jsx";
 
 const root = document.getElementById("root");
 
