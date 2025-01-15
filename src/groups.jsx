@@ -25,6 +25,7 @@ const Groups = () => {
       return newActivities;
     });
   };
+
   const handleMoveActivitiesBack = () => {
     setActivities((prevActivities) => {
       const newActivities = [...prevActivities];
@@ -35,10 +36,10 @@ const Groups = () => {
   };
 
   return (
-    <div className="flex flex-col items-center w-screen h-screen bg-gray-800 text-white">
+    <div className="flex flex-col items-center w-full h-screen bg-gray-800 text-white overflow-hidden">
       <Link
         to="/"
-        className="mb-5 absolute top-2 left-2 border-gray-300 border rounded-md p-1 bg-gray-700"
+        className="absolute top-2 left-2 border-gray-300 border rounded-md p-1 bg-gray-700"
       >
         Tillbaka
       </Link>
@@ -59,7 +60,7 @@ const Groups = () => {
       </div>
 
       <h1 className="text-4xl font-bold mt-5 text-green-500">Grupper</h1>
-      <div className="grid grid-cols-4 gap-6 mb-4 px-5 py-2 w-full h-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-4 px-5 py-2 w-full h-full">
         {groups.length === 0 ? (
           <p>Inga grupper har skapats ännu.</p>
         ) : (
@@ -68,8 +69,7 @@ const Groups = () => {
               <Groupcard
                 group={group}
                 index={index}
-                activity={activities[index]}
-                className="bg-gray-700 p-4 rounded-lg"
+                activity={activities[index % activities.length]}
               />
             </div>
           ))
