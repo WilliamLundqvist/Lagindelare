@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import initialUsers from "./data/namn.json";
-import { useGroups } from "./context/GroupsContext";
+import initialUsers from "../data/namn.json";
+import { useGroups } from "../context/GroupsContext";
 import { Link } from "react-router";
 
 const App = () => {
@@ -63,7 +63,12 @@ const App = () => {
             onChange={(e) => setName(e.target.value)}
             placeholder="Enter name"
           />
-          <button type="submit">Submit</button>
+          <button
+            className="border border-black rounded-lg p-1 active:bg-gray-300 "
+            type="submit"
+          >
+            Submit
+          </button>
         </form>
         <div className="w-fit">
           <div className="text-3xl my-3">Namn med i aktiviteten</div>
@@ -92,10 +97,15 @@ const App = () => {
             onChange={(e) => setGroupsCount(Number(e.target.value))}
             className="border-2 border-black mr-3"
           />
-          <button onClick={handleGenerateGroups}>Generera grupper</button>
+          <button
+            className="border border-black rounded-lg p-1 active:bg-gray-300 "
+            onClick={handleGenerateGroups}
+          >
+            Generera grupper
+          </button>
         </div>
         <div className="w-fit mt-6">
-          <ul className="grid grid-cols-2">
+          <ul className="grid grid-cols-2 gap-3">
             {groups.map((group, index) => (
               <li key={index}>
                 <h1 className="text-3xl">Grupp {index + 1}</h1>

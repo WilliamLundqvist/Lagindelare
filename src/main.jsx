@@ -4,8 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router"; // Fixed import fro
 
 import "./index.css";
 import { GroupsProvider } from "./context/GroupsContext.jsx";
-import Groups from "./groups.jsx";
-import App from "./app.jsx";
+import Groups from "./pages/groups.jsx";
+import App from "./pages/app.jsx";
+import SlideShow from "./pages/SlideShow.jsx";
 
 const root = document.getElementById("root");
 
@@ -15,6 +16,7 @@ ReactDOM.createRoot(root).render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/groups" element={<Groups />} />
+        <Route path="/slideshow" element={<SlideShow />} />
       </Routes>
     </BrowserRouter>
   </GroupsProvider>

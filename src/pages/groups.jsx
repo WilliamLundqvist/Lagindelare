@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useGroups } from "./context/GroupsContext";
-import Groupcard from "./components/groupcard";
+import { useGroups } from "../context/GroupsContext";
+import Groupcard from "../components/groupcard";
 import { Link } from "react-router";
 
 const Groups = () => {
