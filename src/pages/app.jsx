@@ -121,12 +121,20 @@ const App = () => {
           </ul>
         </div>
       </div>
-      <Link
-        to="/groups"
-        className=" fixed bottom-3 right-3 rounded-md text-2xl border border-black p-2"
-      >
-        Till grupper
-      </Link>
+      <div className="fixed bottom-3 right-3 flex flex-col gap-3">
+        <Link
+          to="/groups"
+          className=" rounded-md text-2xl border border-black p-2"
+        >
+          Till grupper
+        </Link>
+        <Link
+          to="/slideshow"
+          className=" rounded-md text-2xl border border-black p-2"
+        >
+          Slideshow
+        </Link>
+      </div>
     </div>
   );
 };
