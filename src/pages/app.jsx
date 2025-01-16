@@ -128,12 +128,6 @@ const App = () => {
         >
           Till grupper
         </Link>
-        <Link
-          to="/slideshow"
-          className=" rounded-md text-2xl border border-black p-2"
-        >
-          Slideshow
-        </Link>
       </div>
     </div>
   );
